@@ -30,3 +30,6 @@ _ReSharper*/
 .vs/
 #Nuget packages folder
 packages/
+jupyter/.ipynb_checkpoints/
+jupyter/my_env/
+jupyter/include/__pycache__

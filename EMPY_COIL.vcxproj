@@ -52,10 +52,11 @@
     <ClCompile Include="src\source\coil\EM_COIL_Loop.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="setup.py" />
+    <None Include="jupyter\Field_Draw.ipynb" />
+    <None Include="jupyter\include\BathPlateModel.py" />
+    <None Include="jupyter\Team Problem No.3 coil.ipynb" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="resource.h" />
     <ClInclude Include="src\basic\EM_3dVector.h" />
     <ClInclude Include="src\source\coil\EMPY_COIL.h" />
     <ClInclude Include="src\source\coil\EM_COIL.h" />
