@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\fem\adaptive_integration.c">
+      <Filter>src\fem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\coil\EllipticIntegral.c">
+      <Filter>src\source\coil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\coil\EM_COIL.cpp">
+      <Filter>src\source\coil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\coil\EM_COIL_Arc.cpp">
+      <Filter>src\source\coil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\coil\EM_COIL_Block.cpp">
+      <Filter>src\source\coil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\coil\EM_COIL_Loop.cpp">
+      <Filter>src\source\coil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\basic\EM_Math.cpp">
+      <Filter>src\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\source\coil\EMPY_FieldSources.cpp">
+      <Filter>src\source\coil</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\source\coil\EM_COIL.h">
+      <Filter>src\source\coil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\coil\EM_COIL_Element_base.h">
+      <Filter>src\source\coil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\source\coil\EMPY_COIL.h">
+      <Filter>src\source\coil</Filter>
+    </ClInclude>
+    <ClInclude Include="src\basic\EM_3dVector.h">
+      <Filter>src\basic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="setup.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{3f22577f-dc78-4771-a5e8-5cf681a99a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fem">
+      <UniqueIdentifier>{a5806116-247e-45ad-90ad-c729605f9b64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\source">
+      <UniqueIdentifier>{688b8430-f1ef-40a1-8cf4-48513bbc51b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\source\coil">
+      <UniqueIdentifier>{add564b9-e153-4f45-acb1-e2154eb4ef79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\basic">
+      <UniqueIdentifier>{7e3fe724-3357-4cad-a065-f663b38fe963}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
