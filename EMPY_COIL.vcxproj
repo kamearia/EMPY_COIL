@@ -442,9 +442,9 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>../lib/Spromeps64.lib;C:\EMSolution\EMSolPy\lib\EMSolFort.lib;$(OutDir)\mpmetislib.lib;msvcprt.lib;libngsolve.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>msvcprt.lib;libngsolve.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>LinkVerboseLib</ShowProgress>
-      <AdditionalLibraryDirectories>x64\Release;C:\Program Files\Python310\libs;C:\Program Files (x86)\Intel\oneAPI\compiler\2024.0\lib;C:\EMSolution\EMSolPy2\PythonRun2\env\Lib\site-packages\netgen\lib;C:\EMSolution\EMSolPy2\PythonRun2\env\Lib\site-packages\ngsolve;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files\Python310\libs;C:\Program Files (x86)\Intel\oneAPI\compiler\2024.0\lib;C:\EMSolution\EMSolPy2\PythonRun2\env\Lib\site-packages\netgen\lib;C:\EMSolution\EMSolPy2\PythonRun2\env\Lib\site-packages\ngsolve;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>Nafxcw.lib;msvcprtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>

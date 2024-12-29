@@ -23,8 +23,9 @@ Thumbs.db
 [Dd]ebug*/
 *.lib
 *.sbr
+*.exp
 obj/
-[Rr]elease*/
+#[Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
 .vs/
@@ -33,3 +34,5 @@ packages/
 jupyter/.ipynb_checkpoints/
 jupyter/my_env/
 jupyter/include/__pycache__
+
+!x64/Release/EMPY.pyd
