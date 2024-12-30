@@ -426,7 +426,7 @@
       <Parallelization>false</Parallelization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAs>CompileAsCpp</CompileAs>
-      <AdditionalIncludeDirectories>.\src;C:\EMSolution\EMSolPy\PythonRun2\env\Lib\site-packages\pybind11\include;\Program Files (x86)\Intel\MPI\4.1.3.045\em64t\include;C:\Program Files\Python310\include;C:\Program Files (x86)\Intel\oneAPI\compiler\2024.0\lib;C:\EMSolution\EMSolPy2\PythonRun2\env\Lib\site-packages\netgen\include\pybind11;C:\EMSolution\EMSolPy2\PythonRun2\env\Lib\site-packages\netgen\include;C:\EMSolution\EMSolPy2\PythonRun2\env\Lib\site-packages\pybind11\include\pybind11</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\src;C:\Program Files (x86)\Intel\oneAPI\compiler\2024.0\lib;C:\Program Files\Python310\include;jupyter\my_env\Lib\site-packages\pybind11\include;jupyter\my_env\Lib\site-packages\netgen\include</AdditionalIncludeDirectories>
       <OpenMP>None</OpenMP>
       <Cpp0xSupport>false</Cpp0xSupport>
       <InterproceduralOptimization>NoIPO</InterproceduralOptimization>
@@ -444,7 +444,7 @@
     <Link>
       <AdditionalDependencies>msvcprt.lib;libngsolve.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>LinkVerboseLib</ShowProgress>
-      <AdditionalLibraryDirectories>C:\Program Files\Python310\libs;C:\Program Files (x86)\Intel\oneAPI\compiler\2024.0\lib;C:\EMSolution\EMSolPy2\PythonRun2\env\Lib\site-packages\netgen\lib;C:\EMSolution\EMSolPy2\PythonRun2\env\Lib\site-packages\ngsolve;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Intel\oneAPI\compiler\2024.0\lib;C:\Program Files\Python310\libs;jupyter\my_env\Lib\site-packages\netgen\lib;jupyter\my_env\Lib\site-packages\ngsolve;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>Nafxcw.lib;msvcprtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>

@@ -3,9 +3,11 @@
 #include <fem.hpp>
 #include <python_ngstd.hpp>
 #include <pybind11/pybind11.h>
+#include <pybind11/operators.h>
 #include <pybind11/stl.h>
 #include <cmath>
 #include "source/coil/EM_COIL.h"
+#include "basic/EM_3dVector.h"
 #include <fstream>
 
 namespace ngfem
@@ -300,6 +302,7 @@ PYBIND11_MODULE(EMPY, m) {
 
 		py::class_<EM_3dVector>(m, "EM_3dVector")
 			.def(py::init<double, double, double>())
+//			.def(py::self + py::self)
 			;
 	}
 /*
