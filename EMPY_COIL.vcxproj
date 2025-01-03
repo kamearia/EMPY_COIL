@@ -58,6 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\basic\EM_3dVector.h" />
+    <ClInclude Include="src\basic\EM_defines.h" />
+    <ClInclude Include="src\basic\EM_Math.h" />
+    <ClInclude Include="src\basic\src.h" />
     <ClInclude Include="src\source\coil\EMPY_COIL.h" />
     <ClInclude Include="src\source\coil\EM_COIL.h" />
     <ClInclude Include="src\source\coil\EM_COIL_Element_base.h" />
@@ -176,7 +179,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetExt>.pyd</TargetExt>
-    <TargetName>EMPY</TargetName>
+    <TargetName>EMPY_Field</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>

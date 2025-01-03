@@ -39,6 +39,15 @@
     <ClInclude Include="src\basic\EM_3dVector.h">
       <Filter>src\basic</Filter>
     </ClInclude>
+    <ClInclude Include="src\basic\src.h">
+      <Filter>src\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\basic\EM_Math.h">
+      <Filter>src\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\basic\EM_defines.h">
+      <Filter>src\basic</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="jupyter\Field_Draw.ipynb">

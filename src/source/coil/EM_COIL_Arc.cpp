@@ -1,9 +1,6 @@
-#ifdef COILBASE
+
 #include "source/coil/EM_COIL.h"
-#include "basic/my_math.h"
-#else
-#include "basic/EM_defines.h"
-#endif
+#include "basic/EM_Math.h"
 #include "source/coil/coil_field.h"
 #define FEPS 1.e-50
 #define LOGDIV( A, B)   ( (fabs(A)>FEPS && fabs(B)>FEPS )? log((A)/(B)) : 0. )

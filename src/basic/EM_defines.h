@@ -1,34 +1,13 @@
 #pragma once
-#ifndef COILBASE
-#include "parallel/EM_Parallel.h"
-#include <limits.h>
-#include <float.h>
-#endif
 #include <complex>
-#ifndef COILBASE
-#include <assert.h>
 
-#include "protection/user.h"
-#include "protection/machine.h"
-#include "basic/my_math.h"
-#include <stdio.h>
-
-//#define DEBUG_WRITE
-#include "basic/EM_DebugWriter.h"
-/*
-#define SINGLE
-*/
-//#define DOUBLE
-#endif
 #ifdef SINGLE
 #define EM_REAL float
 #else
 #define EM_REAL double
 #endif
-#ifndef COILBASE
-#endif
 typedef std::complex<EM_REAL> COMPLEX;
-#ifndef CODEBASE
+
 #define EM_CLASS
 #define EM_DECL
 #define EM_EXTERN_DECL
@@ -148,7 +127,7 @@ public:
 //template <class T>
 //T EM_Singleton<T>::obj;
 
-#endif
+
 
 
 

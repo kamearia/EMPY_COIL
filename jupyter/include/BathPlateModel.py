@@ -2,8 +2,11 @@ from netgen.occ import *
 from ngsolve import TaskManager
 import math
 from ngsolve import *
+import sys
+sys.path.append('include')
+from EMPY_COIL import *
 
-def MakeCoil():
+def Prob3Coil():
     rin=20e-3
     rout=40e-3
     h=20e-3
@@ -15,20 +18,9 @@ def MakeCoil():
     axialWidth=h
     zp=z+h/2
     J=1260  #(AT)
-    #B=LOOP(current, radius, pz, radialWidth, axialWidth)
-
-    a=radialWidth
-    b=axialWidth
-    angle=360
-    f = WorkPlane(Axes((radius-a/2,0,zp-b/2), n=-Y, h=X)).Rectangle(a,b).Face()
-    coil = f.Revolve(Axis((0,0,0),Z),angle)
-    return coil
     
-from ngsolve import *
-from netgen.occ import *
-from ngsolve.webgui import Draw
-from netgen.webgui import Draw as DrawGeo    
-DrawGeo(MakeCoil())
+    loop=EMPY_LOOP(J, radius, zp, radialWidth, axialWidth)
+    return loop
 
 class MeasureFace():
     num=0
@@ -127,6 +119,7 @@ class BathPlateModel():
         self.outer_boundary=None
         self.conductiveDomain=None
         self.conductor_boundary=None
+        self.coil=None
         self.SetMesh(**kwargs)
         
     def GetGeometry(self):
@@ -282,9 +275,10 @@ class BathPlateModel():
         MeasureFace.SetMesh(mesh)
         self.Print()
 
-        coil=MakeCoil()
-        self.model=self.model-coil
-        self.model=Glue([self.model,coil])
+        coil=Prob3Coil()
+        self.coil=coil
+        self.model=self.model-coil.geo
+        self.model=Glue([self.model,coil.geo])
  
     def GetGeometry(self):
         return self.model

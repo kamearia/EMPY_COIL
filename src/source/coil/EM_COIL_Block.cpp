@@ -2,9 +2,8 @@
 #include "basic/EM_defines.h"
 #include "source/coil/EM_COIL.h"
 #include "source/coil/coil_field.h"
-#include "basic/my_math.h"
-//#include "basic\exit.h"
-//#include "io\files.h"
+#include "basic/EM_Math.h"
+
 
 /****    EM_COIL_Block   ***********************************/
 EM_COIL_Block::EM_COIL_Block(

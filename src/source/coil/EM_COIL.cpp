@@ -1,7 +1,7 @@
 #ifdef COILBASE
 #include "source/coil/EM_COIL.h"
 #include "basic/EM_Math.h"
-#include "basic/my_math.h"
+//#include "basic/my_math.h"
 #else
 #include "basic/EM_Headers.h"
 #include "domain/EM_DomainVectors.h"

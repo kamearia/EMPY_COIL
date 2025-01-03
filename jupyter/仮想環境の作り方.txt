@@ -1,5 +1,11 @@
-python -m venv my_env  # my_env という名前の仮想環境を作成
-my_env\Scripts\activate
-pip install -r requirements.txt
+>python -m venv my_env  # my_env という名前の仮想環境を作成
+>my_env\Scripts\activate
+>pip install -r requirements.txt
 
-pip freeze > requirements.txt
+>pip freeze > requirements.txt
+
+
+jupyterの起動
+>cd C:\EMSolution\EMSolPy2\EMPY_COIL\jupyter
+>C:\EMSolution\EMSolPy2\EMPY_COIL\jupyter\my_env\Scripts\activate
+>jupyter notebook

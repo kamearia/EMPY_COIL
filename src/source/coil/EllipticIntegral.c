@@ -1,6 +1,5 @@
 #include "basic/EM_defines.h"
-#include "basic/my_math.h"
-//#include "source/coil/coil_field.h"
+#include "basic/EM_Math.h"
 #include <cmath>
 #include <cstdlib>
 

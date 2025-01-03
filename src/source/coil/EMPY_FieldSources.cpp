@@ -247,7 +247,7 @@ namespace ngfem
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(EMPY, m) {
+PYBIND11_MODULE(EMPY_Field, m) {
 
 		py::class_<EM_COIL_Element>(m, "EM_COIL_Element")
 			.def(py::init<>())

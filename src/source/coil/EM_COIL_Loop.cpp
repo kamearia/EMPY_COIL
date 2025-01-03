@@ -1,11 +1,6 @@
-#ifdef COILBASE
 #include "source/coil/EM_COIL.h"
-#else
-#include "basic/EM_defines.h"
-
-#endif
 #include "source/coil/coil_field.h"
-#include "basic/my_math.h"
+#include "basic/EM_Math.h"
 
 /****    EM_COIL_Loop   ***********************************/
 EM_COIL_Loop::EM_COIL_Loop(EM_REAL current, EM_REAL radius, EM_REAL z, EM_REAL radialWidth, EM_REAL axialWidth)
